@@ -23,4 +23,8 @@ switch ($loc) {
 }
 
 $controller->run();
+extract($data);
+include "template/header.php";
+include ($controller->$view);
+include "template/footer.php";
 

@@ -2,7 +2,7 @@
 
 exit('fin');
 
-class TagController
+class TagController extends BaseController
 {
 
     public function __construct($toto)
@@ -30,4 +30,20 @@ class TagController
     {
         echo "Untag";
     }
+
+        public function getView()
+    {
+        echo "get a view";
+    }
+
+    public function setView()
+    {
+        echo "set view";
+    }
+
+    public function run()
+    {
+        echo "run";
+    }
+
 }
