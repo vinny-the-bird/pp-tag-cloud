@@ -12,7 +12,7 @@ class NoteController extends BaseController{
                 $this->index();
                 break;
             case "show":
-                $this->show();
+                $this->show($action);
                 break;
             default:
                 echo "404";
@@ -27,22 +27,23 @@ class NoteController extends BaseController{
     public function show($id)
     {
         echo "uneNote";
+        echo $this->$id;
     }
 
-    public function getView()
-    {
-        echo "get a view";
-    }
+    // public function getView()
+    // {
+    //     echo "get a view";
+    // }
 
-    public function setView()
-    {
-        echo "set view";
-    }
+    // public function setView()
+    // {
+    //     echo "set view";
+    // }
 
-    public function run()
-    {
-        echo "run";
-    }
+    // public function run()
+    // {
+    //     echo "run";
+    // }
 
 }
 

@@ -14,7 +14,7 @@ class TagController extends BaseController
                 $this->index();
                 break;
             case "show":
-                $this->show();
+                $this->show($toto);
                 break;
             default:
                 echo "404";
@@ -26,24 +26,24 @@ class TagController extends BaseController
         echo "Liste de tous les tags";
     }
 
-    public function show()
+    public function show($id)
     {
         echo "Untag";
     }
 
-        public function getView()
-    {
-        echo "get a view";
-    }
+    //     public function getView()
+    // {
+    //     echo "get a view";
+    // }
 
-    public function setView()
-    {
-        echo "set view";
-    }
+    // public function setView()
+    // {
+    //     echo "set view";
+    // }
 
-    public function run()
-    {
-        echo "run";
-    }
+    // public function run()
+    // {
+    //     echo "run";
+    // }
 
 }
