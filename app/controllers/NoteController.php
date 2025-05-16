@@ -2,7 +2,7 @@
 
 <?php
 
-class NoteController{
+class NoteController extends BaseController{
     public function __construct($action)
     {
         echo "Je suis dans le controlleur Note action : " . $action;
@@ -28,6 +28,22 @@ class NoteController{
     {
         echo "uneNote";
     }
+
+    public function getView()
+    {
+        echo "get a view";
+    }
+
+    public function setView()
+    {
+        echo "set view";
+    }
+
+    public function run()
+    {
+        echo "run";
+    }
+
 }
 
 ?>
