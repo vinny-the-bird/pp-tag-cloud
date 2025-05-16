@@ -2,16 +2,22 @@
 
 abstract class BaseController {
     private string $view;
-    abstract protected string $action;
+    protected string $action;
+    
+    protected function getView() {
+        return $this->view;
+    }
 
-    abstract public function getView();
-    abstract protected function setView();
-
-    abstract public function run();
+    protected function setView($view) {
+        $this->view = $view;
+    }
 
     abstract protected function index();
     abstract protected function show($id);
 
+    public function run(): void {
+        echo "running";
+    }
 }
 
 ?>
